@@ -1,0 +1,450 @@
+
+.calc{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    position: absolute;
+    background-color: black;
+    top:20px;
+    left: 200px;
+    width: 520px;
+    height: 770px;
+    color: aliceblue;
+    align-content: center;
+    text-align:center;
+    margin: 10px 100px;
+    border-radius: 50px;
+    box-shadow: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+#key{
+position: absolute;
+display: block;
+top: 10px;
+left: 900px;
+width: 200px;
+height: 200px;
+background-color: aqua;
+z-index: 10;
+}
+
+.botton{
+    background-color: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.kaitou{
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    top: 40px;
+    left: 50px;
+    width:410px;
+    height: 90px;
+    background-color:rgb(53, 52, 52);
+    border-radius: 30px;
+    font-size: 60px;
+    text-align: center;
+    align-items: center;
+    opacity: 50%;
+
+}
+
+ /* ----------line-one----------  */
+
+.btn-ac{
+    font-family: Arial, Helvetica, sans-serif;
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    top: 170px;
+    left: 50px;
+    width: 90px;
+    height:90px;
+    background-color: rgb(53, 52, 52);
+    border-radius: 50px;
+    font-size:50px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-ac:hover{
+    transform: translateY(-10px);
+    font-size: 80px;
+}
+.btn-01{
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    top: 170px;
+    left: 160px;
+    width: 90px;
+    height:90px;
+    background-color: rgb(53, 52, 52);
+    border-radius: 50px;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-01:hover{
+    transform: translateY(-10px);
+    font-size: 80px;
+}
+.btn-02{
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    top: 170px;
+    left: 270px;
+    width: 90px;
+    height:90px;
+    background-color: rgb(53, 52, 52);
+    border-radius: 50px;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-02:hover{
+    transform: translateY(-10px);
+    font-size: 80px;
+}
+.btn-03{
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    top: 170px;
+    left: 380px;
+    width: 90px;
+    height:90px;
+    background-color: rgb(246, 166, 7);
+    border-radius: 50px;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-03:hover{
+    transform: translateY(-10px);
+    font-size: 80px;
+}
+/* ------------------line-two------------- */
+.btn-7{
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    top: 280px;
+    left: 50px;
+    width: 90px;
+    height:90px;
+    background-color: rgb(53, 52, 52);
+    border-radius: 50px;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-7:hover{
+    transform: translateY(-10px);
+    font-size: 80px;
+}
+.btn-8{
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    top: 280px;
+    left: 160px;
+    width: 90px;
+    height:90px;
+    background-color: rgb(53, 52, 52);
+    border-radius: 50px;
+    font-size:50px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-8:hover{
+    transform: translateY(-10px);
+    font-size: 80px;
+}
+.btn-9{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    top: 280px;
+    left: 270px;
+    width: 90px;
+    height:90px;
+    background-color: rgb(53, 52, 52);
+    border-radius: 50px;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-9:hover{
+    transform:scale(1.1);
+    font-size: 80px;
+}
+.btn-x{
+    font-family: Arial, Helvetica, sans-serif;
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    top: 280px;
+    left: 380px;
+    width: 90px;
+    height:90px;
+    background-color: rgb(246, 166, 7);
+    border-radius: 50px;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-x:hover{
+    transform: translateY(-10px);
+    font-size: 80px;
+}
+/* ----------------line-three---------------- */
+.btn-4{
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    top: 390px;
+    left: 50px;
+    width: 90px;
+    height:90px;
+    background-color: rgb(53, 52, 52);
+    border-radius: 50px;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-4:hover{
+    transform: translateY(-10px);
+    font-size: 80px;
+}
+.btn-5{
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    top: 390px;
+    left: 160px;
+    width: 90px;
+    height:90px;
+    background-color: rgb(53, 52, 52);
+    border-radius: 50px;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-5:hover{
+    transform: translateY(-10px);
+    font-size: 80px;
+}
+.btn-6{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    top: 390px;
+    left: 270px;
+    width: 90px;
+    height: 90px;
+    background-color: rgb(53, 52, 52);
+    border-radius: 50px;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-6:hover{
+    transform: translateY(-10px);
+    font-size: 80px;
+}
+.btn-{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    top: 390px;
+    left: 380px;
+    width: 90px;
+    height:90px;
+    background-color:rgb(246, 166, 7);
+    border-radius: 50px;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-:hover{
+    transform: translateY(-10px);
+    font-size: 80px;
+}
+/* ---------------line-four--------------- */
+.btn-1{
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    top: 500px;
+    left: 50px;
+    width: 90px;
+    height:90px;
+    background-color: rgb(53, 52, 52);
+    border-radius: 50px;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-1:hover{
+    transform: translateY(-10px);
+    font-size: 80px;
+}
+.btn-2{
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    top: 500px;
+    left: 170px;
+    width: 90px;
+    height:90px;
+    background-color: rgb(53, 52, 52);
+    border-radius: 50px;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    transform: 0.3s;
+}
+.btn-2:hover{
+    transform: translateY(-10px);
+    font-size: 80px;
+}
+.btn-3{
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    top: 500px;
+    left: 280px;
+    width: 90px;
+    height:90px;
+    background-color: rgb(53, 52, 52);
+    border-radius: 50px;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-3:hover{
+    transform: translateY(-10px);
+    font-size: 80px;
+}
+.btn-04{
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    top: 500px;
+    left: 390px;
+    width: 90px;
+    height:90px;
+    background-color: rgb(246, 166, 7);
+    border-radius: 50px;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-04:hover{
+    transform: translateY(-10px);
+    font-size: 80px;
+}
+/* ---------------last-line---------- */
+.btn-0{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    top: 610px;
+    left: 50px;
+    width: 210px;
+    height:90px;
+    background-color: rgb(53, 52, 52);
+    border-radius: 50px;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-0:hover{
+    transform: translateY(-10px);
+    font-size: 80px;
+}
+.btn-05{
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    top: 610px;
+    left: 280px;
+    width: 100px;
+    height:100px;
+    background-color: rgb(53, 52, 52);
+    border-radius: 50px;
+    font-size: 70px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-05:hover{
+    transform: translateY(-10px);
+    font-size: 80px;
+}
+.btn-06{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    top: 610px;
+    left: 390px;
+    width: 90px;
+    height:90px;
+    background-color: rgb(246, 166, 7);
+    border-radius: 50px;
+    font-size: 70px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    transform: 0.3s;
+}
+
+.botton :hover{
+    background-color: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-10px);
+    font-size: 80px;
+}
+.abc{
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    top: 40px;
+    left: 50px;
+    width:410px;
+    height: 90px;
+    background-color:rgb(53, 52, 52);
+    border-radius: 50px;
+    font-size: 35px;
+    text-align: center;
+    align-items: center;
+    opacity: 50%;
+
+    
+    
+}

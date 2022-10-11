@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color:#0b0d20;
+    --text-color:#fff;
+    --main-color:#eb4a4a;
+    --second-color:gray;
+    --other-color:#12141c;
+    --h1-font:5.2rem;
+    --h2-font:3.5rem;
+    --p-font:1.1rem;
+}
+section{
+    padding:5rem;
+    margin-top: 5rem;
+    top: 5rem;
+}
+.main-section h2{
+    font-size: var(--h2-font);
+    text-align: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+hr{
+    margin-bottom: 2rem;
+}
+.cart{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    text-align: center;
+    gap:2rem;
+    margin-top: 5rem;
+}
+.cart-box img{
+    width: 100%;
+    height: auto;
+    border-radius:10px;
+}
+.cart-box h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+@media(max-widthpx) {
+    header{
+        padding: 16px 3%;
+    }
+    header.sticky{
+        padding: 8px 3%;
+    }
+    section{
+        padding: 130px 3% 60px;
+    }
+    
+}
+
+@media(max-width:970px){
+    :root{
+        --h1-font:5.2rem;
+        --h2-font:3.5rem;
+        --p-font:1.1rem;
+    }
+    section{
+        padding: 70px 3% 60px;
+    }
+    .home{
+        height: 85vh;
+    }
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .about-img{
+        text-align: center;
+    }
+    .contact{
+        grid-template-columns: 1fr;
+    }
+
+}
+@media (max-width:830px) {
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+		position: absolute;
+        top: 50%;
+        right:-100%;
+        width: 230px;
+        height: 100vh;
+        background: #12141c;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        padding:60px 30px;
+        transition: all .38s ease;
+	}
+    .navbar a{
+        display: block;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .navbar.active{
+        right: 0;
+    }
+    :root{
+        --h1-font:3.7rem;
+        --h2-font:2.7rem;
+    }
+    
+}
+

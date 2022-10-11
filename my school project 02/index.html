@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my school project 02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ----------------java.script start----------------------  -->
+<script>
+window.addEventListener(
+    'load',() => {
+        function digitNum() {
+            var dig = Number(kaitou.innerText);
+            var round = Math.round(dig * 10) / 10;
+            kaitou.innerText = round;
+        }
+        function limit() {
+            var leng = kaitou.innerText.length;
+            if (leng > 12) {
+                kaitou.innerText = kaitou.innerText.substring(0, leng - 1);
+            }
+        }
+
+
+
+
+
+
+
+        var kaitou = document.querySelector('.kaitou')
+
+
+        window.addEventListener(
+            'keydown',
+            Keydownevent,
+            true
+        );
+        
+        var x =500;
+        var y =10;
+        function Keydownevent(event){
+            
+            if(event.key =='ArrowUp'){
+                y = y - 10;
+            }
+            if(event.key== 'ArrowDown'){
+                y = y + 10;
+            }
+            if(event.key =='ArrowRight'){
+                x = x - 10;
+            }
+            if(event.key == 'ArrowLeft'){
+                x = x + 10;
+            }
+            document.getElementById(
+                'key'
+            ).style.top = y + 'px';
+            document.getElementById(
+                'key'
+            ).style.left = y + 'px';
+
+            if(event.key === '0'){
+                if(kaitou.innerText ==='0'){
+                    kaitou.innerText = 0;
+                }else{
+                    kaitou.innerText = kaitou.innerText + 0;
+                }
+                limit();
+
+                
+            }
+            if(event.key==='1'){
+                if(kaitou.innerText==='0'){
+                    kaitou.innerText = '1'
+                }else{
+                    kaitou.innerText = kaitou.innerText + 1;
+                }
+                limit();
+            }
+            if(event.key==='2'){
+                if(kaitou.innerText==='0'){
+                    kaitou.innerText = '2'
+                }else{
+                    kaitou.innerText = kaitou.innerText + 2;
+                }
+                limit();
+            }
+            if (event.key ==='3'){
+                if(kaitou.innerText==='0'){
+                    kaitou.innerText = '3'
+                }else{
+                    kaitou.innerText=kaitou.innerText + 3;
+                }
+                limit();
+               
+            }
+            if (event.key==='4'){
+                if (kaitou.innerText==='0'){
+                    kaitou.innerText = '4'
+                }else{
+                    kaitou.innerText = kaitou.innerText + 4;
+                }
+                limit();
+
+            }
+            if(event.key ==='5'){
+                if (kaitou.innerText==='5') {
+                    kaitou.innerText='5'
+                } else {
+                    kaitou.innerText=kaitou.innerText + 5;
+                    
+                }
+                limit();
+            }
+            if(event.key==='6'){
+                if(kaitou.innerText==='0'){
+                    kaitou.innerText='6'
+                }else{
+                    kaitou.innerText=kaitou.innerText + 6;
+                }
+                limit();
+                
+            }
+            if(event.key === '7'){
+                if(kaitou.innerText==='0'){
+                    kaitou.innerText='7'
+                }else{
+                    kaitou.innerText= kaitou.innerText + 7;
+                }
+                limit();
+            }
+            if(event.key==='8'){
+                if(kaitou.innerText==='0'){
+                    kaitou.innerText='8'
+                }else{
+                    kaitou.innerText = kaitou.innerText + 8;
+                }
+                limit();
+            }
+            if (event.key ==='9'){
+                if (kaitou.innerText==='0'){
+                    kaitou.innerText='9'
+                }else{
+                    kaitou.innerText = kaitou.innerText + 9;
+                }
+                limit();
+            }
+
+            if(event.key=== '+'){
+                num1 = Number(kaitou.innerText);
+                kaitou.innerText = '+';
+                katei = '.btn-04';
+            }
+            if (event.key=== '-'){
+                num1= Number(kaitou.innerText);
+                kaitou.innerText = ' ';
+                katei = '.btn-';
+            }
+            if(event.key==='*'){
+                num1=Number(kaitou.innerText);
+                kaitou.innerText=' '
+                katei= '.btn-x';
+            }
+            if(event.key === '/'){
+                num1=Number(kaitou.innerText);
+                kaitou.innerText = ' ';
+                katei = '.btn-03';
+            }
+            if(event.key==='Backspace'){
+                if(kaitou.innerText !=='0'){
+                    kaitou.innerText = kaitou.innerText.slice(0,-1);
+                }
+                if(kaitou.innerText===''){
+                    kaitou.innerText = '0';
+                }
+               
+            }
+
+
+
+            if(event.key==='c'){
+                kaitou.innerText='0';
+
+            }
+
+
+            if(event.key==='Enter'){
+                if(katei==='.btn-04'){
+                    num2 = Number(kaitou.innerText);
+                    kaitou.innerText= num1 + num2;
+                    katei= ' ';
+                }
+                if(katei==='.btn-'){
+                    num2 = Number(kaitou.innerText);
+                    kaitou.innerText = num1 - num2;
+                    katei = ' ';
+                }
+                if(katei ==='.btn-x'){
+                    num2=Number(kaitou.innerText);
+                    kaitou.innerText = num1 * num2;
+                    katei = ' ';
+                }
+                if(katei==='.btn-03'){
+                    num2=Number(kaitou.innerText);
+                    kaitou.innerText = num1 / num2;
+                    katei = ' ';
+                }
+            }
+        }
+
+         
+
+         
+
+         document.querySelector(
+        '.btn-0'
+        ).onclick = function() {
+            if(kaitou.innerText==='0'){
+                kaitou.innerText = 0 ;
+            }else{
+                kaitou.innerText =kaitou.innerText + 0;
+            }
+            
+        };
+
+        document.querySelector(
+        '.btn-05'
+        ).onclick = function() {
+            if(kaitou.innerText==='0'){
+                kaitou.innerText = '.';
+            }else{
+                kaitou.innerText =kaitou.innerText + '.';
+            }
+        };
+        document.querySelector(
+        '.btn-1'
+        ).onclick = function() {
+            if(kaitou.innerText==='0'){
+                kaitou.innerText = 1;
+            }else{
+                kaitou.innerText =kaitou.innerText + 1;
+            }
+        };
+        document.querySelector(
+        '.btn-2'
+        ).onclick = function() {
+            if(kaitou.innerText==='0'){
+                kaitou.innerText = 2 ;
+            }else{
+                kaitou.innerText =kaitou.innerText + 2;
+            }
+        };
+        document.querySelector(
+        '.btn-3'
+        ).onclick = function() {
+            if(kaitou.innerText===''){
+                kaitou.innerText = 3;
+            }else{
+                kaitou.innerText =kaitou.innerText + 3;
+            }
+        };
+        document.querySelector(
+        '.btn-4'
+        ).onclick = function() {
+            if(kaitou.innerText==='0'){
+                kaitou.innerText = 4 ;
+            }else{
+                kaitou.innerText =kaitou.innerText + 4;
+            }
+        };
+        document.querySelector(
+        '.btn-5'
+        ).onclick = function() {
+            if(kaitou.innerText==='0'){
+                kaitou.innerText = 5 ;
+            }else{
+                kaitou.innerText =kaitou.innerText + 5;
+            }
+        };
+        document.querySelector(
+        '.btn-6'
+        ).onclick = function() {
+            if(kaitou.innerText==='0'){
+                kaitou.innerText = 6;
+            }else{
+                kaitou.innerText =kaitou.innerText + 6;
+            }
+        };
+        document.querySelector(
+        '.btn-7'
+        ).onclick = function() {
+            if(kaitou.innerText==='0'){
+                kaitou.innerText = 7 ;
+            }else{
+                kaitou.innerText =kaitou.innerText + 7;
+            }
+        };
+        document.querySelector(
+        '.btn-8'
+        ).onclick = function() {
+            if(kaitou.innerText==='0'){
+                kaitou.innerText = 8 ;
+            }else{
+                kaitou.innerText =kaitou.innerText + 8;
+            }
+        };
+        document.querySelector(
+        '.btn-9'
+        ).onclick = function() {
+            if(kaitou.innerText==='0'){
+                kaitou.innerText = 9 ;
+            }else{
+                kaitou.innerText =kaitou.innerText + 9;
+            }
+        };
+        document.querySelector(
+        '.btn-02'
+        ).onclick = function() {
+            if(kaitou.innerText==='0'){
+                kaitou.innerText = '%' ;
+            }else{
+                kaitou.innerText =kaitou.innerText + '%';
+            };
+        };
+        document.querySelector(
+        '.btn-03'
+        ).onclick = function() {
+            if(kaitou.innerText==='0'){
+                kaitou.innerText = '/' ;
+            }else{
+                kaitou.innerText =kaitou.innerText + '/';
+            }
+        };
+        document.querySelector(
+        '.btn-x'
+        ).onclick = function() {
+            if(kaitou.innerText==='0'){
+                kaitou.innerText = 'x' ;
+            }else{
+                kaitou.innerText =kaitou.innerText + 'x';
+            }
+        };
+        document.querySelector(
+        '.btn-'
+        ).onclick = function() {
+            if(kaitou.innerText==='0'){
+                kaitou.innerText = '-';
+            }else{
+                kaitou.innerText =kaitou.innerText + '-';
+            }
+        };
+        document.querySelector(
+        '.btn-04'
+        ).onclick = function() {
+            if(kaitou.innerText==='0'){
+                kaitou.innerText = ' ' ;
+            }else{
+                kaitou.innerText =kaitou.innerText + ' ';
+            }
+        };
+        document.querySelector(
+        '.btn-ac'
+        ).onclick = function() {
+                document.querySelector(
+                '.kaitou'
+                ).innerText = '';
+        };
+        // document.querySelector(
+        // '.btn-06'
+        // ).onclick = function() {
+        //         document.querySelector(
+        //         '.kaitou'
+        //         ).innerText = '=';
+        // };
+        var num1 = 0;
+        var num2 = 0;
+        var katei = '';
+        document.querySelector(
+            '.btn-04'
+        ).onclick = function(){
+            num1 = Number(kaitou.innerText);
+            kaitou.innerText='';
+            katei ='.btn-04';
+        }
+        document.querySelector(
+            '.btn-'
+        ).onclick = function(){
+            num1 = Number(kaitou.innerText);
+            kaitou.innerText='';
+            katei = '.btn-';
+        }
+        document.querySelector(
+            '.btn-x'
+        ).onclick = function(){
+            num1 = Number(kaitou.innerText);
+            kaitou.innerText='';
+            katei = '.btn-x';
+        }
+
+        document.querySelector(
+            '.btn-03'
+        ).onclick = function(){
+            num1 = Number(kaitou.innerText);
+            kaitou.innerText='';
+            katei= '.btn-03';
+
+        }
+
+        document.querySelector(
+            '.btn-06'
+        ).onclick = function(){
+
+            if(katei ==='.btn-04'){
+                num2=Number(kaitou.innerText);
+                kaitou.innerText= num1 + num2;
+                console.log("plus")
+
+            }
+
+            if (katei==='.btn-'){
+                num2=Number(kaitou.innerText);
+                kaitou.innerText=num1 - num2;
+                console.log("minus")
+            }
+            if (katei==='.btn-x'){
+                num2=Number(kaitou.innerText);
+                kaitou.innerText=num1 * num2;
+                console.log("multi")
+            }
+            if (katei==='.btn-03'){
+                num2 = Number(kaitou.innerText);
+                if(num2 ===0 ){
+                    kaitou.innerText ='0で割ることはできません';
+                    kaitou.className='abc';
+                    console.log("div")
+                }else{
+                kaitou.innerText = num1/num2;
+                 console.log("div")
+                }
+            }
+        }
+
+        document.querySelector(
+            '.btn-ac'
+        ).onclick=function(){
+            num1 =0;
+            num2 =0;
+            katei ='';
+            kaitou.innerText = " "
+
+        }
+    }
+);
+</script>
+<!-- ---------------comand-f for multiselect-------------  -->
+<!-- ----------------------java.script end----------------------  -->
+<div id="key"></div>  
+<div class="calc"> 
+            <div class="kaitou"> </div>
+        <div class="botton">
+            <div class="btn-ac">AC</div>
+        </div>
+        <div class="botton">
+            <div class="btn-01">+/-</div>
+        </div>
+        <div class="botton">
+            <div class="btn-02">%</div>
+        </div>
+        <div class="botton">
+            <div class="btn-03">/</div>
+        </div>
+        <div class="botton">
+            <div class="btn-7">7</div>
+        </div>
+        <div class="botton">
+            <div class="btn-8">8</div>
+        </div>
+        <div class="botton">
+            <div class="btn-9">9</div>
+        </div>
+        <div class="botton">
+            <div class="btn-x">x</div>
+        </div>
+        <div class="botton">
+            <div class="btn-4">4</div>
+        </div>
+        <div class="botton">
+            <div class="btn-5">5</div>
+        </div>
+        <div class="botton">
+            <div class="btn-6">6</div>
+            </div>
+        <div class="botton">
+            <div class="btn-">-</div>
+        </div>
+        <div class="botton">
+            <div class="btn-1">1</div>
+        </div>
+        <div class="botton">
+            <div class="btn-2">2</div>
+        </div>
+        <div class="botton">
+         <div class="btn-3">3</div>
+        </div>
+        <div class="botton">
+            <div class="btn-04">+</div>
+        </div>
+        <div class="botton">
+             <div class="btn-0">0</div>
+        </div>
+        <div class="botton">
+            <div class="btn-05">.</div>
+        </div>
+        <div class="botton">
+            <div class="btn-06">=</div>
+        </div>
+    </div> 
+</body>
+</html>
