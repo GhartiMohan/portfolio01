@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang ="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width = device-width ,initial-scale=1.0">
+<title>All products-Redstore </title>
+<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&family=Gideon+Roman&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="container">
+	<div class="navbar">
+	<div class="logo">
+		
+		<a href="index.html"><img src="logo.png" width="125px"></a>
+		
+		</div>
+		<nav>
+		<ul id="menuItems">
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="product.html">PRODUCTS</a></li>
+			<li><a href="">CONTACT</a></li>
+			<li><a href="account.html">ACCOUNT</a></li>
+			</ul>
+		</nav>
+		<a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
+		<img src="menu logo.png" class="menu-icon" onClick="menutoggle()">
+	</div>	
+	</div>
+<!----------------account-page------------>
+	<div class="account-page">
+	<div class="container">
+		<div class="row">
+		<div class="col-2">
+			<img src="Untitled-1.png" width="100%">
+			</div>
+		<div class="col-2">
+		<div class="form-container">
+			<div class="form-btn">
+			<span onClick="login()">Login</span>
+			<span onClick="register()">Register</span>
+				<hr id="Indicator">
+			</div>
+			
+				<form id="loginform">
+					<input type="text" placeholder="Username">
+					<input type="password" placeholder="password">
+					<button type="submit" class="btn">Login</button>
+					<a href="">Forgot password</a>
+				</form>
+				<form id="Regform">
+					<input type="text" placeholder="Username">
+					<input type="email" placeholder="email">
+					<input type="password" placeholder="password">
+					<button type="submit" class="btn">Register</button>
+				</form>
+			</div>
+		</div>
+		</div>
+		</div>
+	</div>
+	
+	
+<!-------------------------footer--------------->
+	
+<div class="footer">
+	<div class="conainer">
+	<div class="row">
+	<div class="footer-col-1">
+	<h3>Download Our App</h3>
+		<p>Download App for Android and ios mobile phone.</p>
+		<div class="app-logo">
+		<img src="apple logo.png">
+		<img src="google play .png">
+		</div>
+	</div>
+	<div class="footer-col-2">
+		<img src="logo white.png">
+		<p>Our purpose Is To sustaninably make the pleasure<br>benefits of sports Accessible to the many.</p>
+	</div>
+	<div class="footer-col-3">
+	<h3>Useful links </h3>
+		<ul> 
+		<li> Coupons</li>
+		<li> Blog post</li>
+		<li> Return policy</li>
+		<li>Join Affiliate</li>
+		</ul>
+	</div>
+		<div class="footer-col-4">
+	<h3>Follow us </h3>
+		<ul> 
+		<li> Facebook</li>
+		<li>Twitter</li>
+		<li>Instagram</li>
+		<li>Youtube</li>
+		</ul>
+	</div>
+	</div>
+		<hr>
+		<p class="copyright">copyright 2022 - Easy tutorials</p>
+	</div>
+	</div>	
+	
+	<!-----------------------just for toggle menu-------------->
+	<script>
+	var menuItems = document.getElementById("menuItems");
+		menuItems.style.maxHeight = "0px";
+		function menutoggle(){
+			if (menuItems.style.maxHeight=="0px")
+				{
+					menuItems.style.maxHeight = "200px";
+				}
+			else
+				{
+					menuItems.style.maxHeight="0px";
+				}
+}
+	</script>
+<!--------------------------js toggle form-------------------->
+	<script>
+	var loginform =document.getElementById("loginform");
+	var Regform =document.getElementById("Regform");
+	var indicator =document.getElementById("Indicator");
+	
+		function register(){
+			Regform.style.transform="translateX(0px)";
+			loginform.style.transform="translateX(0px)";
+			indicator.style.transform ="translateX(100px)";
+		}
+		function login(){
+			Regform.style.transform ="translateX(300px)";
+			loginform.style.transform="translateX(300px)";
+			indicator.style.transform="translateX(0px)";
+		}
+	</script>
+</body>
+</html>
